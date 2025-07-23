@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>The Last of Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css">
     
 </head>
 <body>
+
     <header class="header">
         <ul class="header--wrapper">
             <!--colocar id nas seções-->
@@ -54,24 +56,21 @@
 
         <section class="main--content" id="characters">
             <div class="carrossel-wrapper">
-
-<!--
-                <div class="carrossel">
-                    <div class="card"><img src="src/characters/ellie.jpg" alt="Ellie"></div>
-                    <div class="card"><img src="src/characters/joel.jpg" alt="Joel"></div>
-                    <div class="card"><img src="src/characters/abby.jpg" alt="Abby"></div>
-                    <div class="card"><img src="src/characters/dina.jpg" alt="Dina"></div>
-                    <div class="card"><img src="src/characters/tommy.jpg" alt="Tommy"></div>
-                    <div class="card"><img src="src/characters/gail.jpg" alt="Gail"></div>
-                    <div class="card"><img src="src/characters/isaac.jpg" alt="Isaac"></div>
-                    <div class="card"><img src="src/characters/jesse.jpg" alt="Jesse"></div>
-                    <div class="card"><img src="src/characters/maria.jpg" alt="Maria"></div>
-                </div>
-
-                <button class="seta esquerda" id="anterior">&#10094;</button>
-                <button class="seta direita" id="proximo">&#10095;</button>
+                <div class="swiper MySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="src/characters/ellie.jpg" alt="Ellie"></div>
+                        <div class="swiper-slide"><img src="src/characters/joel.jpg" alt="Joel"></div>
+                        <div class="swiper-slide"><img src="src/characters/abby.jpg" alt="Abby"></div>
+                        <div class="swiper-slide"><img src="src/characters/dina.jpg" alt="Dina"></div>
+                        <div class="swiper-slide"><img src="src/characters/tommy.jpg" alt="Tommy"></div>
+                        <div class="swiper-slide"><img src="src/characters/gail.jpg" alt="Gail"></div>
+                        <div class="swiper-slide"><img src="src/characters/isaac.jpg" alt="Isaac"></div>
+                        <div class="swiper-slide"><img src="src/characters/jesse.jpg" alt="Jesse"></div>
+                        <div class="swiper-slide"><img src="src/characters/maria.jpg" alt="Maria"></div>
+                    </div>
+                </div> 
             </div>
-            -->
+
         </section>
 
         <section class="main--content" id="gallery">
@@ -81,7 +80,9 @@
         <section class="main--content" id="watch-now">
 
         </section>
-        <script src="js/index.js"></script>
+        
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
