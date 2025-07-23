@@ -34,21 +34,9 @@ O layout visual foi desenvolvido por **Lorena Melo**
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-projeto-the-last-of-us/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
----
-
 ## 👤 Colaboração
 
-- **Desenvolvimento**: [@seu-usuário](https://github.com/seu-usuario)  
+- **Desenvolvimento**: [@drepimelo](https://github.com/drepimelo)  
 - **Design**: [Lorena Melo](https://www.behance.net/lorenamelo4)
 
 > 💡 Este projeto é exclusivamente para fins de estudo e portfólio. Nenhum uso comercial.
@@ -68,18 +56,6 @@ Substitua o caminho abaixo por uma imagem real do projeto:
 ```markdown
 ![Preview do site](./assets/img/preview.png)
 ```
-
----
-
-## 🚀 Como Executar Localmente
-
-```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
-open index.html
-```
-
-Ou simplesmente **abra o `index.html` no navegador.**
 
 ---
 
