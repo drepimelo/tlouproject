@@ -68,50 +68,17 @@ videos.forEach((video) => {
   observer.observe(video);
 });
 
-const carrossel = document.getElementById('carrossel');
-const cards = document.querySelectorAll('.card');
-const anterior = document.getElementById('anterior');
-const proximo = document.getElementById('proximo');
-const container = document.getElementById('carrossel-container');
-
-let index = 0;
-let intervalo;
-
-// Move o carrossel para o slide atual
-function atualizar() {
-  carrossel.style.transform = `translateX(-${index * 100}%)`;
-}
-
-// Botões
-anterior.addEventListener('click', () => {
-  index = (index - 1 + cards.length) % cards.length;
-  atualizar();
-  resetarAutoPlay();
-});
-
-proximo.addEventListener('click', () => {
-  index = (index + 1) % cards.length;
-  atualizar();
-  resetarAutoPlay();
-});
-
-// Autoplay
-function iniciarAutoPlay() {
-  intervalo = setInterval(() => {
-    index = (index + 1) % cards.length;
-    atualizar();
-  }, 3000); // Espera 3 segundos
-}
-
-function resetarAutoPlay() {
-  clearInterval(intervalo);
-  iniciarAutoPlay();
-}
-
-// Pausar autoplay ao passar mouse por cima
-container.addEventListener('mouseenter', () => clearInterval(intervalo));
-container.addEventListener('mouseleave', iniciarAutoPlay);
-
-// Iniciar ao carregar
-iniciarAutoPlay();
-    
+const swiper = new Swiper('.mySwiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+  });
