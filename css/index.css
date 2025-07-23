@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100..900&display=swap');
+
+
+:root{
+    background-color: black;
+    font-family: "Lexend";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    margin: auto;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+
+.header--wrapper{
+    margin: 10px;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+}
+
+.header--wrapper_content{
+    list-style-type: none;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(.15,.65,.47,.89);
+
+}
+
+.header--wrapper_content a{
+    text-decoration: none;
+    color: white;
+}
+
+.header--logo{
+    width: 500px;
+    transition: transform 0.4s cubic-bezier(.15,.65,.47,.89); /* Suaviza o efeito de scale */
+
+}
+
+#hero{
+    background-image:url('../src/bg/fundoComPersonagens.png');
+    background-size: cover;       /* Faz a imagem cobrir toda a seção */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh;                /* Faz a seção ocupar toda a altura da tela */
+    color: white;                 /* Exemplo: texto branco sobre a imagem */
+    display: flex;                /* Opcional: para centralizar conteúdo */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative
+}
+
+#hero img{
+   width: 100%;
+}
+
+#smoke{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  object-fit: cover;  /* faz a névoa cobrir a tela toda */
+  z-index: 1;         /* fica atrás */
+  transform: translateX(-15%);
+  transition: transform 0.1s linear;
+}
+
+#cars{
+  z-index: 2;  /* fica na frente */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.main--content__s1{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ou a altura desejada */
+    overflow: hidden;
+    display: flex;
+    align-items: center;   /* Alinha verticalmente no centro */
+    justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+    
+}
+
+.main--content__s1 video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translate(-50%, -50%); /* Adicione esta linha */
+    overflow: hidden;
+}
+
+.seasonOne_wrap{
+    font-size: 16px;
+    height: 200px;
+    width: 700px;
+    padding-left: 5%;
+}
+
+#seasonOne_title{
+    font-family: "bebas neue";
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.main--content__s2{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ou a altura desejada */
+    overflow: hidden;
+    display: flex;
+    align-items: center;   /* Alinha verticalmente no centro */
+    justify-content: flex-end; /* Alinha horizontalmente à esquerda */
+    
+}
+
+.main--content__s2 video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translate(-50%, -50%); /* Adicione esta linha */
+    overflow: hidden;
+}
+
+.seasonTwo_wrap{
+    font-size: 16px;
+    height: 200px;
+    width: 700px;
+    padding-right: 5%;
+}
+
+#seasonTwo_title{
+    font-family: "bebas neue";
+    font-weight: 200;
+    font-size: 1rem;
+}
+

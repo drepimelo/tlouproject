@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>The Last of Us</title>
+    <link rel="stylesheet" href="./css/index.css">
+    
+</head>
+<body>
+    <header class="header">
+        <ul class="header--wrapper">
+            <!--colocar id nas seções-->
+            <li class="header--wrapper_content"><a href="#about">About</a></li>
+            <li class="header--wrapper_content"><a href="#characters">Characters</a></li>
+            <li class="header--wrapper_content"><a href="#hero"><img src="src/icons/logo.svg" alt="The Last of Us Logo" class="header--logo"></a></li>
+            <li class="header--wrapper_content"><a href="#gallery">Gallery</a></li>
+            <li class="header--wrapper_content"><a href="#watch-now">Watch Now</a></li>
+        </ul>
+    </header>
+    <main class="main">
+
+        <section class="main--content" id="hero">
+            <img src="/src/bg/neblina.png" alt="Névoa passando atrás dos carros." id="smoke">
+            <img src="/src/bg/carros.png" alt="Carros revirados." id="cars">
+        </section>
+
+        <section class="main--content" id="about">
+            <div class="main--content__s1">
+                <video id="bgVideoS1" muted playsinline>
+                    <source src="src/bg/fungo2.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos em HTML5.
+                </video>
+                <div class="seasonOne_wrap">
+                    <h1 id="seasonOne_title">Season One</h1>
+                    <p id="seasonOne_text"><em>The Last of Us</em> Season 1 follows Joel, a smuggler burdened by personal loss, as he’s given a mission to escort Ellie, a 14-year-old girl who is mysteriously immune to a deadly fungal infection. Set in a world devastated by a global outbreak, the series takes viewers through a haunting journey across a ruined America, where survival is brutal and trust is rare.
+                    As Joel and Ellie travel through abandoned cities, dangerous quarantine zones, and hostile factions, their relationship evolves from reluctant partnership to a powerful emotional bond. But with Ellie’s immunity being the key to a possible cure, Joel is forced to make a choice that could change the fate of humanity — or destroy everything he has left.</p>
+                </div>
+            </div>
+
+            <div class="main--content__s2">
+                <video id="bgVideoS2" muted  playsinline>
+                    <source src="src/bg/sangue_3.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos em HTML5.
+                </video>
+                <div class="seasonTwo_wrap">
+                    <h1 id="seasonTwo_title">Season Two</h1>
+                    <p id="seasonTwo_text">
+                    Five years after their journey across a broken America, Joel and Ellie are trying to rebuild a sense of normalcy in a world that no longer remembers what that means. But peace is short-lived. As shadows of the past return and new threats rise from both the infected and the living, Ellie is forced down a violent path driven by grief, vengeance, and the haunting cost of survival.
+
+                    In a world where trust is rare and every choice leaves a scar, the line between right and wrong fades — and Ellie must confront who she is, and what she’s willing to become.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main--content" id="characters">
+            <div class="carrossel-wrapper">
+
+<!--
+                <div class="carrossel">
+                    <div class="card"><img src="src/characters/ellie.jpg" alt="Ellie"></div>
+                    <div class="card"><img src="src/characters/joel.jpg" alt="Joel"></div>
+                    <div class="card"><img src="src/characters/abby.jpg" alt="Abby"></div>
+                    <div class="card"><img src="src/characters/dina.jpg" alt="Dina"></div>
+                    <div class="card"><img src="src/characters/tommy.jpg" alt="Tommy"></div>
+                    <div class="card"><img src="src/characters/gail.jpg" alt="Gail"></div>
+                    <div class="card"><img src="src/characters/isaac.jpg" alt="Isaac"></div>
+                    <div class="card"><img src="src/characters/jesse.jpg" alt="Jesse"></div>
+                    <div class="card"><img src="src/characters/maria.jpg" alt="Maria"></div>
+                </div>
+
+                <button class="seta esquerda" id="anterior">&#10094;</button>
+                <button class="seta direita" id="proximo">&#10095;</button>
+            </div>
+            -->
+        </section>
+
+        <section class="main--content" id="gallery">
+
+        </section>
+
+        <section class="main--content" id="watch-now">
+
+        </section>
+        <script src="js/index.js"></script>
+    </main>
+</body>
+</html>
