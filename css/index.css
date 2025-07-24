@@ -43,6 +43,10 @@ body{
     text-decoration: none;
     color: white;
 }
+.header--wrapper_content a:hover{
+    color: rgb(255, 118, 88);
+    transition: .3s;
+}
 
 .header--logo{
     width: 500px;
@@ -162,11 +166,16 @@ body{
 
 #characters{
     margin: 60px 0;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
 }
 
+#characters-swiper{
+    max-width: 120vh;
+}
 .swiper {
   width: 100%;
-  max-width: 120vh;
 
 }
 
@@ -232,4 +241,59 @@ body{
 .slide-img{
     position: relative;
     display: inline-block;
+}
+
+#gallery{
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery-swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.gallery-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: rgba(255, 255, 255, 0.554);
+    transform: scale(0.5);
+    z-index: 3;
+}
+
+.gallery-swiper .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); /* easeInOutQuart */
+}
+
+.button{
+    font-family: "bebas neue";
+    border-radius: 0px;
+    width: 25vw;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+#watch-now{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }

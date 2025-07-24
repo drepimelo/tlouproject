@@ -73,20 +73,6 @@ videos.forEach((video) => {
   observer.observe(video);
 });
 
-const swiper = new Swiper('.mySwiper', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    loop: true,
-  });
 
   var TrandingSlider = new Swiper('.tranding-slider', {
   effect: 'coverflow',
@@ -95,17 +81,29 @@ const swiper = new Swiper('.mySwiper', {
   loop: true,
   slidesPerView: 'auto',
   coverflowEffect: {
-    rotate: -3,
-    stretch: 0,
+    rotate: -6,
+    stretch: -3,
     depth: 100,
     modifier: 2.5,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   }
 });
+
+const gallerySwiper = new Swiper(".gallery-swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 800,
+  pagination: {
+    el: ".gallery-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
+});
+
