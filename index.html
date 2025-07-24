@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>The Last of Us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="./css/index.css">
     
 </head>
@@ -55,7 +57,7 @@
         </section>
 
         <section class="main--content" id="characters">
-            <div class="swiper tranding-slider">
+            <div class="swiper tranding-slider" id="characters-swiper">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide tranding-slide">
@@ -154,15 +156,29 @@
         </section>
 
         <section class="main--content" id="gallery">
+            <div class="swiper gallery-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="src/gallery/galeria1.jpg" alt="Tommy na neve."></div>
+                        <div class="swiper-slide"><img src="src/gallery/galeria2.jpg" alt="Estalador em frente a um incêndio."></div>
+                        <div class="swiper-slide"><img src="src/gallery/galeria3.jpg" alt="Joel e Ellie em frente a um campo gramado e ruínas de um avião ao fundo."></div>
+                        <div class="swiper-slide"><img src="src/gallery/galeria4.jpg" alt="Ellie se esquentando perante a fogueira."></div>
+                        <div class="swiper-slide"><img src="src/gallery/galeria5.jpg" alt="Joel."></div>
+
+                        </div>
+                        <div class="swiper-button-next gallery-next"></div>
+                        <div class="swiper-button-prev gallery-prev"></div>
+                    </div>
+            </div>
 
         </section>
 
         <section class="main--content" id="watch-now">
-
+            <a href="https://play.hbomax.com/show/93ba22b1-833e-47ba-ae94-8ee7b9eefa9a" target="_blank"><button class="button is-light is-large is-responsive is-outlined">Watch Now</button></a>
         </section>
         
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
