@@ -50,18 +50,18 @@ body{
 
 .header--logo{
     width: 500px;
-    transition: transform 0.4s cubic-bezier(.15,.65,.47,.89); /* Suaviza o efeito de scale */
+    transition: transform 0.4s cubic-bezier(.15,.65,.47,.89); 
 
 }
 
 #hero{
     background-image:url('../src/bg/fundoComPersonagens.png');
-    background-size: cover;       /* Faz a imagem cobrir toda a seção */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    height: 100vh;                /* Faz a seção ocupar toda a altura da tela */
-    color: white;                 /* Exemplo: texto branco sobre a imagem */
-    display: flex;                /* Opcional: para centralizar conteúdo */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 100vh;                
+    color: white;                 
+    display: flex;                
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -79,14 +79,14 @@ body{
   top: 0;
   left: 0;
   width: 150%;
-  object-fit: cover;  /* faz a névoa cobrir a tela toda */
-  z-index: 1;         /* fica atrás */
+  object-fit: cover;  
+  z-index: 1;         
   transform: translateX(-15%);
   transition: transform 0.1s linear;
 }
 
 #cars{
-  z-index: 2;  /* fica na frente */
+  z-index: 2;  
     position: absolute;
     bottom: 0;
     margin-bottom: 0;
@@ -95,11 +95,11 @@ body{
 .main--content__s1{
     position: relative;
     width: 100%;
-    height: 100vh; /* ou a altura desejada */
+    height: 100vh; 
     overflow: hidden;
     display: flex;
-    align-items: center;   /* Alinha verticalmente no centro */
-    justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+    align-items: center;   
+    justify-content: flex-start; 
     
 }
 
@@ -111,7 +111,7 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translate(-50%, -50%); /* Adicione esta linha */
+    transform: translate(-50%, -50%); 
     overflow: hidden;
 }
 
@@ -131,11 +131,11 @@ body{
 .main--content__s2{
     position: relative;
     width: 100%;
-    height: 100vh; /* ou a altura desejada */
+    height: 100vh; 
     overflow: hidden;
     display: flex;
-    align-items: center;   /* Alinha verticalmente no centro */
-    justify-content: flex-end; /* Alinha horizontalmente à esquerda */
+    align-items: center;   
+    justify-content: flex-end; 
     
 }
 
@@ -147,7 +147,7 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translate(-50%, -50%); /* Adicione esta linha */
+    transform: translate(-50%, -50%); 
     overflow: hidden;
 }
 
@@ -276,7 +276,7 @@ body{
 }
 
 .gallery-swiper .swiper-wrapper {
-  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); /* easeInOutQuart */
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); 
 }
 
 .button{
@@ -305,16 +305,16 @@ body{
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    rgb(0, 0, 0),   /* topo mais escuro */
-    rgba(0, 0, 0, 0.3)    /* base mais transparente */
-  );; /* ou outra cor de overlay */
-  opacity: 1; /* controla a opacidade da camada */
+    rgb(0, 0, 0),   
+    rgba(0, 0, 0, 0.3)  
+  );
+  opacity: 1; 
   z-index: 1;
 }
 
 #watch-now > * {
   position: relative;
-  z-index: 2; /* coloca o conteúdo acima da camada escura */
+  z-index: 2; 
 }
 
 footer{
