@@ -3,10 +3,10 @@
 :root{
     background-color: black;
     font-family: "Lexend";
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
     font-size: 2rem;
-    color: white;
+    color: rgb(255, 255, 255);
     scroll-behavior: smooth;
 }
 body{
@@ -245,7 +245,7 @@ body{
 
 #gallery{
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -291,9 +291,71 @@ body{
 }
 
 #watch-now{
+    position: relative;
     display: flex;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-image: url(../src/bg/mofo.avif);
+}
+
+#watch-now::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgb(0, 0, 0),   /* topo mais escuro */
+    rgba(0, 0, 0, 0.3)    /* base mais transparente */
+  );; /* ou outra cor de overlay */
+  opacity: 1; /* controla a opacidade da camada */
+  z-index: 1;
+}
+
+#watch-now > * {
+  position: relative;
+  z-index: 2; /* coloca o conteúdo acima da camada escura */
+}
+
+footer{
+    height: 25vh;
+    width: 100%;
+    font-size: 0.4rem;
+    align-content: center;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 3vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.footer-main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    font-size: 0.6rem;
+}
+.footer-wrapper a{
+    color: white;
+    text-decoration: none;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+}
+
+.footer-socials img{
+    height: 6vh;
+    
 }
