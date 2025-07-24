@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    window.scrollTo(0, 1);
+  });
+
+
 const smoke = document.querySelector('#smoke');
 
 window.addEventListener('scroll', () => {
