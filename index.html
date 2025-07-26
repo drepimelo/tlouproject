@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>The Last of Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
@@ -11,9 +12,8 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header-desktop"> 
         <ul class="header--wrapper">
-            <!--colocar id nas seções-->
             <li class="header--wrapper_content"><a href="#about">About</a></li>
             <li class="header--wrapper_content"><a href="#characters">Characters</a></li>
             <li class="header--wrapper_content"><a href="#hero"><img src="src/icons/logo.svg" alt="The Last of Us Logo" class="header--logo"></a></li>
@@ -21,6 +21,13 @@
             <li class="header--wrapper_content"><a href="#watch-now">Watch Now</a></li>
         </ul>
     </header>
+
+    <header class="header-mobile">
+        <a href="#hero" class="logo-mobile">
+            <img src="./src/icons/logo.svg" alt="The Last of Us Logo" class="header--logo">
+        </a>
+    </header>
+
     <main class="main">
 
         <section class="main--content" id="hero">

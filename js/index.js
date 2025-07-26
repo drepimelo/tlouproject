@@ -99,4 +99,3 @@ const gallerySwiper = new Swiper(".gallery-swiper", {
     prevEl: ".gallery-prev",
   },
 });
-

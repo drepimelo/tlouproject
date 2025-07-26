@@ -13,7 +13,7 @@ body{
     margin: auto;
 }
 
-.header{
+.header-desktop{
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
@@ -22,10 +22,15 @@ body{
     width: 100%;
 }
 
+.header-mobile {
+    display: none;
+}
+
+
 .header--wrapper{
     margin: 10px;
     display: flex;
-    gap: 120px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
@@ -358,4 +363,34 @@ footer p{
 .footer-socials img{
     height: 6vh;
     
+}
+
+
+
+@media screen and (max-width: 1106px){
+    .header--wrapper{
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+    /* ...escondemos o header do desktop... */
+    .header-desktop {
+        display: none;
+    }
+
+    /* ...e mostramos o header do mobile. */
+    .header-mobile {
+        display: flex; /* ou 'block', dependendo de como você o estilizar */
+        justify-content: center;
+        padding: 1rem 2rem;
+        width: 100%;
+        position: fixed;
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); /* Cor de fundo para o header mobile */
+        z-index: 1000;
+    }
+
+    
+
 }
