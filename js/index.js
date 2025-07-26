@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
   
   if (window.scrollY > heroHeight - 50) {
 
-    logo.style.transform = 'scale(0.7)';
+    logo.style.transform = 'scale(0.5)';
     
     headerContents.forEach(el => {
       el.style.opacity = '1';
@@ -74,7 +74,7 @@ videos.forEach((video) => {
   loop: true,
   slidesPerView: 'auto',
   coverflowEffect: {
-    rotate: -6,
+    rotate: -4,
     stretch: -3,
     depth: 100,
     modifier: 2.5,

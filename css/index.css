@@ -13,7 +13,7 @@ body{
     margin: auto;
 }
 
-.header-desktop{
+.header{
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
@@ -22,17 +22,14 @@ body{
     width: 100%;
 }
 
-.header-mobile {
-    display: none;
-}
 
 
 .header--wrapper{
     margin: 10px;
     display: flex;
-    gap: 50px;
+    margin: 0 5vw;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-transform: uppercase;
     font-family: "Bebas Neue";
 }
@@ -41,8 +38,9 @@ body{
     list-style-type: none;
     opacity: 0;
     transition: opacity 0.4s cubic-bezier(.15,.65,.47,.89);
-
 }
+
+
 
 .header--wrapper_content a{
     text-decoration: none;
@@ -54,9 +52,9 @@ body{
 }
 
 .header--logo{
-    width: 500px;
+    width: 40vw;
     transition: transform 0.4s cubic-bezier(.15,.65,.47,.89); 
-
+    z-index: 3;
 }
 
 #hero{
@@ -115,6 +113,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right center;
     z-index: -1;
     transform: translate(-50%, -50%); 
     overflow: hidden;
@@ -151,6 +150,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left center;
     z-index: -1;
     transform: translate(-50%, -50%); 
     overflow: hidden;
@@ -170,18 +170,23 @@ body{
 }
 
 #characters{
-    margin: 60px 0;
+    margin: 0;
     height: 100vh;
     align-content: center;
     justify-content: center;
+    background-image: 
+    linear-gradient(to top, black, transparent),
+    linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+    linear-gradient(to right, #b6aea56f, #000000a0),
+    url(../src/bg/fundo.avif);
+    background-size: cover;
 }
 
 #characters-swiper{
-    max-width: 120vh;
+    max-width: 170vh;
 }
 .swiper {
   width: 100%;
-
 }
 
 .swiper-slide {
@@ -251,6 +256,7 @@ body{
 #gallery{
     width: 100%;
     height: 100vh;
+    margin: 0;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -287,7 +293,7 @@ body{
 .button{
     font-family: "bebas neue";
     border-radius: 0px;
-    width: 25vw;
+    width: fit-content;
 }
 
 .button:hover{
@@ -302,20 +308,10 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-image: url(../src/bg/mofo.avif);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),transparent, transparent),url(../src/bg/mofo.avif);
+    background-repeat: no-repeat;
 }
 
-#watch-now::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgb(0, 0, 0),   
-    rgba(0, 0, 0, 0.3)  
-  );
-  opacity: 1; 
-  z-index: 1;
-}
 
 #watch-now > * {
   position: relative;
@@ -348,7 +344,7 @@ footer p{
     display: flex;
     flex-direction: row;
     gap: 10vh;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 .footer-wrapper a{
     color: white;
@@ -367,30 +363,74 @@ footer p{
 
 
 
-@media screen and (max-width: 1106px){
+@media screen and (max-width: 1214px){
     .header--wrapper{
         gap: 25px;
     }
 }
 
 @media screen and (max-width: 1024px){
-    
-    /* ...escondemos o header do desktop... */
-    .header-desktop {
+    .header--logo{
+        width: 70vw;
+    }
+    .header li{
         display: none;
     }
 
-    /* ...e mostramos o header do mobile. */
-    .header-mobile {
-        display: flex; /* ou 'block', dependendo de como você o estilizar */
-        justify-content: center;
-        padding: 1rem 2rem;
-        width: 100%;
-        position: fixed;
-        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); /* Cor de fundo para o header mobile */
-        z-index: 1000;
+    .tranding-slider{
+        transform: scale(0.8);
     }
 
-    
+    #gallery{
+        height: 80vh;
+    }
 
+    .button{
+        transform: scale(1.25);
+    }
+
+    footer p{
+        padding: 5vh 5vw;
+    }
+}
+
+@media screen and (max-width: 688px){
+    .header--logo{
+        width: 70vw;
+    }
+
+    .seasonOne_wrap, .seasonTwo_wrap{
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-right: none;
+        padding-left: none;
+        padding: 0 12vw;
+    }
+
+    footer p{
+        padding: 12vh 12vh 6vh;
+    }
+    .footer-socials{
+        flex-direction: column;
+        gap:3vh;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        font-size: 0.4rem;
+        gap: 5vh;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #gallery{
+        height: 60vh;
+    }
+
+    .header--logo{
+        width: 80vw;
+    }
 }
